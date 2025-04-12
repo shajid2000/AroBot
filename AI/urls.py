@@ -7,4 +7,4 @@ urlpatterns = [
     path("invoke/", InvokeAgentView.as_view(), name="invoke"),
 ]
 
-urlpatterns.append(static(settings.STATIC_URL, document_root=settings.STATIC_ROOT))
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

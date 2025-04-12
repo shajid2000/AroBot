@@ -57,6 +57,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = config("CORS_ALLOWED_ORIGINS", cast=Csv())
+print(config("CORS_ALLOWED_ORIGINS", cast=Csv()))
 
 ROOT_URLCONF = 'AroBot.urls'
 
@@ -128,7 +129,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
-    "/var/www/static/",
 ]
 
 # Default primary key field type
