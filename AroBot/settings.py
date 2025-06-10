@@ -42,8 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'AI',
-
+    'jarvis',
     'corsheaders',
+     'channels',
 ]
 
 MIDDLEWARE = [
@@ -77,6 +78,12 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'AroBot.wsgi.application'
+
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels.layers.InMemoryChannelLayer"
+    }
+}
 
 
 # Database
