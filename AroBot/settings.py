@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-1+^w^ktgex)a0e8rk33yw$)2@5*i$_1ylbi-uc+z-tb_sem^&&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['AroBot.pythonanywhere.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['AroBot.pythonanywhere.com', 'localhost', '127.0.0.1','arobot.onrender.com']
 
 
 # Application definition
